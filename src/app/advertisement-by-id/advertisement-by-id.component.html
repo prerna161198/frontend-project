@@ -1,0 +1,34 @@
+            <br><br>            
+          <div class="container">
+            <div class="row" > 
+                
+                        
+                                     
+                        
+                        <p>Enter Advertisement Id</p>
+                        <input type="number" name="id" #advId ngModel><br><br>
+                        <button (click)="getAdvertisementById(advId)" type="submit" class="col-1" style="background-color: rgb(173, 16, 97);color: white;" >Submit</button>
+
+                        <br><br>
+                        <div *ngIf="advById">
+                          <br><br>
+                            <img src={{advById.image}} width="300px" height="300px"><br><br>
+                            <p><b>Advertisement Id:</b> {{advById.id}}</p>
+                            <p><b>Advertisement text:</b> {{advById.title}}</p>
+                            <p><b>Advertisement title:</b> {{advById.text}}</p>
+                            <p><b>Posted On:</b> {{advById.postDate}}</p>
+                            <p><b>Location:</b> {{advById.location}}</p>
+                            <p><b>Last Date:</b> {{advById.lastDate}}</p>
+                            <p><b>Price:</b> {{advById.price}}</p>
+                            <p><b>user id:</b> {{advById.user.id}}</p><br><br>
+                            <button (click)="redirectToPayment()" type="submit" style="background-color: mediumblue; color: white;" class="col-3">Buy</button><br><br>
+                        </div>
+                     
+                    </div>
+               </div>
+            
+        <br><br>
+    
+        
+      
+

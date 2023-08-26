@@ -1,0 +1,46 @@
+
+<br><br><br>
+<h2 style="text-align: center;">Create Your Advertisement:</h2><br><br>
+<div class="container" style="border: 3px solid black; background-image: url('/assets/adv.jpg'); background-repeat: no-repeat; background-size: cover;">
+<form #advertisement="ngForm" (ngSubmit)="addAdvertisement(advertisement.value)">
+
+    <label style="color: white;"> Title Of Advertisement:</label><br>
+    <input class="col-4" type="text" name="title" ngModel ><br><br>
+  
+    <label style="color: white;"> Text of Advertisement:</label><br>
+    <input class="col-4" type="text" name="text"  ngModel><br><br>
+    
+    <label style="color: white;"> Post Date:</label><br>
+    <input class="col-4" type="date" name="postDate"  ngModel><br><br>
+  
+    <label style="color: white;"> Status:</label><br>
+    <input class="col-4" type="text" name="status"  ngModel><br><br>
+
+    <label style="color: white;"> Location:</label><br>
+    <input class="col-4" type="text" name="location"  ngModel><br><br>
+   
+    <label style="color: white;"> Last Date:</label><br>
+    <input class="col-4" type="date" name="lastDate"  ngModel><br><br>
+
+    <label style="color: white;"> Price:</label><br>
+    <input class="col-4" type="number" name="price"  ngModel><br><br>
+    <label style="color: white;">Upload Image:</label><br/><br/>
+    <input type="file"><br><br>
+  
+    <label style="color: white;">Set your Profile Picture:</label><br>
+    <input class="col-4" type="text" name="image"  ngModel/><br><br>
+
+    <label style="color: white;"> User ID:</label><br>
+
+    <input class="col-4" type="number" name="user"  ngModel><br><br>
+
+   
+    <label style="color: white;"> Category ID:</label><br>
+    <input class="col-4" type="number" name="category"  ngModel><br><br>
+
+    
+  
+    <button type="submit" style="background-color: blue; color: white;">Create</button> 
+</form>
+</div><br><br><br> 
+  

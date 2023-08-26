@@ -1,0 +1,54 @@
+
+<br><br><br>
+<h2 style="text-align: center;">Update Your Profile:</h2><br><br>
+<div class="container" style="border: 3px solid black; background-image: url('/assets/updateuser.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+<form  (ngSubmit)="editUser(id,name,email,gender,password,mobile,address,city,state,pincode,country,profilePicture)">
+    <div >
+      <br><br>
+       <h2>Update Your Profile</h2>
+      <br><br>
+      <label style="color: white;">Enter Id:</label><br>
+      <input class="col-4" type="number" name="id" #id ngModel ><br><br>
+      <label style="color: white;">Enter Name:</label><br>
+      <input class="col-4" type="text" name="name"  #name ngModel ><br><br>
+      
+      <label style="color: white;">Enter Email:</label><br>
+      <input class="col-4" type="email" name="email"   #email ngModel><br><br>
+      
+      <label style="color: white;">Enter Your Gender:</label><br>
+      <input class="col-4" type="text" name="gender" #gender ngModel><br><br>
+    
+      <label style="color: white;">Enter Your Password:</label><br>
+      <input class="col-4" type="password" name="password" #password ngModel><br><br>
+    
+      <label style="color: white;">Enter Mobile Number:</label><br>
+      <input class="col-4" type="number" name="mobile" #mobile ngModel><br><br>
+     
+      <label style="color: white;">Enter Your Address:</label><br>
+      <input class="col-4" type="text" name="address" #address ngModel><br><br>
+    
+      <label style="color: white;">Enter Your City:</label><br>
+      <input class="col-4" type="text" name="city" #city ngModel><br><br>
+    
+      <label style="color: white;">Enter Your State:</label><br>
+      <input class="col-4" type="text" name="state" #state ngModel><br><br>
+    
+      <label style="color: white;">Enter Your Pincode:</label><br>
+      <input class="col-4" type="number" name="pincode" #pincode ngModel><br><br>
+    
+      <label style="color: white;">Enter Your Country:</label><br>
+      <input class="col-4" type="text" name="country" #country ngModel><br><br>
+      <label style="color: white;">Upload Profile Picture:</label><br>
+      <input type="file"><br><br>
+    
+      <label style="color: white;">Enter Image Path:</label><br>
+      <input class="col-4" type="text" name="profilePicture" #profilePicture ngModel/><br><br>
+      
+    
+      <button type="submit" style="background-color: rgb(26, 43, 227); color: white;" class="col-1">Update</button> 
+    </div>
+    </form>
+    </div><br><br><br>
+    
+    

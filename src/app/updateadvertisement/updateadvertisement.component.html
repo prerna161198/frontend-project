@@ -1,0 +1,40 @@
+
+<br><br><br>
+<h2 style="text-align: center;">Update Advertisement:</h2><br><br>
+<div class="container" style="border: 3px solid black; background-image: url('/assets/back ground 1.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <form  (ngSubmit)="updateAdvertisement(id,title,text,status,location,lastDate,price,image)">
+
+
+        <label style="color: white;">Advertisement Id:</label><br>
+        <input class="col-4" type="number" name="id" #id ngModel ><br><br>
+        <label style="color: white;">Enter Title of Advertisement:</label><br>
+        <input class="col-4" type="text" name="title" #title ngModel ><br><br>
+    
+        <label style="color: white;">Enter Title of Advertisement:</label><br>
+        <input class="col-4" type="text" name="text" #text  ngModel><br><br>
+    
+        <label style="color: white;">Status:</label><br>
+        <input class="col-4" type="text" name="status" #status ngModel><br><br>
+
+        <label style="color: white;">Locatioc:</label><br>
+        <input class="col-4" type="text" name="location" #location ngModel><br><br>
+    
+        <label style="color: white;">Last Date:</label><br>
+        <input class="col-4" type="date" name="lastDate" #lastDate ngModel><br><br>
+
+        <label style="color: white;">Price:</label><br>
+        <input class="col-4" type="number" name="price" #price  ngModel><br><br>
+
+        <label style="color: white;">Upload Image:</label><br/><br/>
+         <input type="file"><br><br>
+  
+         <label style="color: white;">Set your Profile Picture:</label><br>
+         <input class="col-4" type="text" name="image" #image ngModel/><br><br>
+
+        
+    
+        <button type="submit" style="background-color: blue; color: white;">update</button> 
+    </form>
+</div><br><br><br>
+  
+  

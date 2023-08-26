@@ -1,0 +1,29 @@
+<br>
+<div class="container">
+        <div class="row" >
+           
+        <br>
+        <p>For Security Reason Enter your Email</p>
+        <input type="=email" name="=email" #email ngModel><br>
+        <button (click)="getUser(email)" type="submit" class="col-2" style="background-color: rgb(12, 4, 71); color: white;">submit</button><br>
+        <div *ngIf="user">  
+                <br>   
+                <h2>Your Profile</h2><br>
+                <img src={{user.profilePicture}} width="200px" height="200px"><br><br>
+                <P>  Id: {{user.id}}</P>
+                <P>Name: {{user.name}}</P>
+                <P>Email: {{user.email}}</P>
+                <P>Gender: {{user.gender}}</P>
+                <P>Mobile: {{user.mobile}}</P>
+                <P>Address: {{user.address}}</P>
+                <P>City: {{user.city}}</P>
+                <P>State: {{user.state}}</P>
+                <P>Pincode: {{user.pincode}}</P>
+                <P>Country: {{user.country}}</P>
+                <button (click)="redirectToSaveUser()" type="submit" class="col-2" style="background-color: rgb(29, 201, 220); color: black;">Edit</button><br><br>
+        </div>
+        </div>
+           
+</div>
+<br><br>
+

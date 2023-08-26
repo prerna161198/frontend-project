@@ -1,0 +1,28 @@
+<br><button (click)="getAdvertisements()" type="submit" class="col-1" style="background-color: rgb(173, 16, 97);color: white;">Get All</button><br><br>
+<div class="container">
+    <div class="row" > 
+        <div *ngIf="advertisements && advertisements.length>0">
+            <div *ngFor="let adv of advertisements">
+                
+                     <div class="card">
+                 
+                        <img src={{adv.image}} width="300px" height="300px">
+                        <p><b>Advertisement Id:</b> {{adv.id}}</p>
+                        <p><b>Advertisement title:</b> {{adv.title}}</p>
+                        <p><b>Posted On:</b> {{adv.postDate}}</p>
+                        <p><b>Location:</b> {{adv.location}}</p>
+                        <p><b>Last Date:</b> {{adv.lastDate}}</p>
+                        <p><b>Price:</b>: {{adv.price}}</p><br><br>
+    
+                        <button type="submit" style="background-color: mediumblue; color: white;">Buy</button>
+    
+                        <hr>
+                    </div>
+               </div>
+            </div>
+        </div>
+        
+      </div>
+    
+        
+      

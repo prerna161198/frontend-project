@@ -1,0 +1,39 @@
+
+<br><br>            
+<div class="container">
+  <div class="row" > 
+      
+              
+                         
+              <br>
+              <p>Enter Location:</p>
+              <input type="text" name="location" #location ngModel><br/><br>
+              <button (click)="getAdvertisementByLocation(location)" type="submit" class="col-1" style="background-color: rgb(12, 4, 71); color: white;">submit</button><br><br>
+              <div *ngIf="advertisement && advertisement.length>0">
+                  <div *ngFor="let adv of advertisement">
+                    <br><br>
+                    <img src={{adv.image}} width="300px" height="300px"><br><br>
+                    <p><b>Advertisement Id:</b> {{adv.id}}</p>
+                    <p><b>Advertisement title:</b> {{adv.title}}</p>
+                    <p><b>Advertisement text:</b> {{adv.text}}</p>
+                    <p><b>Posted On:</b> {{adv.postDate}}</p>
+                    <p><b>Location:</b> {{adv.location}}</p>
+                    <p><b>Last Date:</b> {{adv.lastDate}}</p>
+                    <p><b>Price:</b>: {{adv.price}}</p>
+                    <p><b>User Id:</b>: {{adv.user.id}}</p><br><br>
+                    <button (click)="redirectToPayment()" type="submit" style="background-color: mediumblue; color: white;" class="col-3">Buy</button><br>
+                      <hr>
+                  </div>
+              </div>
+                    
+                
+              
+             
+          </div>
+     
+  </div>
+<br><br>
+
+
+
+

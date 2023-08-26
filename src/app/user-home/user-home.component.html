@@ -1,0 +1,41 @@
+<br>
+<div style="margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; height: 100px; width: 1000px;">
+    <button (click)="redirectToUserProfile()" type="submit" class="col-3" style="background-color: aquamarine;">My Profile</button>
+    <button (click)="  redirectToMyAdvertisements()" type="submit" class="col-3" style="background-color: aquamarine;">My Advertisements</button>
+    <button (click)="redirectToBuy()" type="submit" class="col-3" style="background-color: aquamarine;">Buy</button>
+    <button (click)="redirectToSell()" type="submit" class="col-3" style="background-color: aquamarine;">Sell</button><br><br><br>
+</div><br><br><br>
+
+
+    <h2 style="text-align: center;">Advertisements</h2><br><br>
+       
+    
+        
+        
+<div class="container">
+<div class="row" > 
+    <div *ngIf="advertisements && advertisements.length>0">
+        <div *ngFor="let adv of advertisements">
+            
+                 <div class="card">
+             
+                    <img src={{adv.image}} width="300px" height="300px">
+                    <p><b>Advertisement Id:</b> {{adv.id}}</p>
+                    <p><b>Advertisement title:</b> {{adv.title}}</p>
+                    <p><b>Posted On:</b> {{adv.postDate}}</p>
+                    <p><b>Location:</b> {{adv.location}}</p>
+                    <p><b>Last Date:</b> {{adv.lastDate}}</p>
+                    <p><b>Price:</b>: {{adv.price}}</p><br><br>
+
+                    <button (click)="redirectToPayment()" type="submit" style="background-color: mediumblue; color: white;">Buy</button>
+
+                    <hr>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+  </div>
+
+    
+  

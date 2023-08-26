@@ -1,0 +1,38 @@
+
+<div style="margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; height: 100px; width: 1000px; background-color: darkgrey;">
+  <!--  <button (click)="redirectToAllAdvertisements()" type="submit" class="col-3" style="background-color: rgb(32, 5, 69);color: white;">All</button>-->
+    <button (click)="redirectToAdvertisementById()" type="submit" class="col-3" style="background-color: rgb(32, 5, 69);color: white;">Search by Advertisement Id</button>
+    <button (click)="redirectToAdvertisementByUser()" type="submit" class="col-3" style="background-color: rgb(32, 5, 69);color: white;">Search by User Id</button>
+    <button  (click)="redirectToAdvertisementByCategory()" type="submit" class="col-3" style="background-color: rgb(32, 5, 69);color: white;">Search By Category</button>
+    <button (click)="redirectToAdvertisementByLocation()" type="submit" class="col-3" style="background-color: rgb(32, 5, 69);color: white;">Search By location</button><br><br><br>
+</div><br><br><br>
+
+<div class="container">
+    <div class="row" > 
+        <div *ngIf="advertisements && advertisements.length>0">
+            <div *ngFor="let adv of advertisements">
+                
+                     <div class="card">
+                 
+                        <img src={{adv.image}} width="300px" height="300px">
+                        <p><b>Advertisement Id:</b> {{adv.id}}</p>
+                        <p><b>Advertisement title:</b> {{adv.title}}</p>
+                        <p><b>Advertisement text:</b> {{adv.text}}</p>
+                        <p><b>Posted On:</b> {{adv.postDate}}</p>
+                        <p><b>Location:</b> {{adv.location}}</p>
+                        <p><b>Last Date:</b> {{adv.lastDate}}</p>
+                        <p><b>Price:</b>: {{adv.price}}</p>
+                        <p><b>user Id:</b> {{adv.user.id}}</p><br><br>
+    
+                        <button type="submit" style="background-color: mediumblue; color: white;">Buy</button>
+    
+                        <hr>
+                    </div>
+               </div>
+            </div>
+        </div>
+        
+      </div>
+    
+        
+      
